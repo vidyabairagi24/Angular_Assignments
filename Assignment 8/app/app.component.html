@@ -1,0 +1,38 @@
+<!-- 
+<div style="text-align:center">
+  <h1>
+    Child to parent communication
+  </h1>
+  <app-child (MyEvent)="Message= $event"></app-child>
+
+  <h2>{{Message}}</h2>  
+</div>
+-->
+
+
+<!--
+   <h1>Component Communication</h1>
+
+<app-child (MyEvent)="Message= $event" [parentData]="message"></app-child>
+  <h2>{{Message}}</h2>  
+
+-->
+
+  
+<!-- 
+  
+  <h1>Enter your name</h1>
+
+<input [(ngModel)]="Name"  type  = "text">
+
+<h2>Length of your name is {{Name.length}}</h2> 
+
+-->
+
+
+<h1>Enter your name</h1>
+<input #InputData type="text">
+
+<button (click) = "Demo(InputData.value)">Submit</button>
+<h1>Lenth of the name is </h1>
+<h1>{{str.length}}</h1>
